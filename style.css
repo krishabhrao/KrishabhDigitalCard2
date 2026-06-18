@@ -1,0 +1,86 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(-45deg,#020617,#0f172a,#1e293b,#312e81);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+padding:20px;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.card{
+width:400px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border-radius:30px;
+padding:35px;
+text-align:center;
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.profile{
+width:170px;
+height:170px;
+object-fit:cover;
+border-radius:50%;
+border:5px solid #3b82f6;
+box-shadow:0 0 40px #2563eb;
+}
+
+h1{
+color:white;
+margin-top:20px;
+font-size:40px;
+}
+
+.role{
+color:#60a5fa;
+font-size:22px;
+margin-top:10px;
+}
+
+.company{
+color:white;
+font-size:26px;
+margin-top:10px;
+font-weight:bold;
+}
+
+.address{
+color:#d1d5db;
+line-height:1.8;
+margin-top:20px;
+}
+
+.btn{
+display:block;
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:15px;
+margin-top:18px;
+border-radius:18px;
+font-size:18px;
+transition:.4s;
+border:none;
+cursor:pointer;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+background:#1d4ed8;
+}
